@@ -1,0 +1,116 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+/* ====== VISION / MISSION / VALUES / Q&E TABS ===== */
+.vmv-container {
+  max-width: 1200px;
+  margin: 0 auto 26px;
+}
+
+.vmv-tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  background: #ffffff;
+}
+
+.vmv-tab {
+  flex: 1;
+  text-align: center;
+  padding: 12px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  color: #0052ce;
+  border: none;
+  background: transparent;
+}
+
+.vmv-tab.active {
+  border-bottom: 3px solid #0066cc;
+  font-weight: 600;
+}
+
+.vmv-panel {
+  display: none;
+  background: #d6f2c6;
+  padding: 12px 18px;
+  border-radius: 0 0 2px 2px;
+  font-size: 14px;
+}
+
+.vmv-panel.active {
+  display: block;
+}
+
+.vmv-panel ul {
+  margin-left: 20px;
+}
+
+
+/* ===== MAKE NAVBAR TEXT BRIGHT ===== */
+.navbar-dark .navbar-nav .nav-link {
+  color: #ffffff !important;   /* bright white */
+  opacity: 1 !important;        /* remove faded look */
+  font-weight: 600;             /* optional - bolder text */
+  letter-spacing: 0.3px;        /* optional - cleaner look */
+}
+
+
+.video-hero {
+  width: 100%;
+  max-width: 700px;
+  height: 550px;
+  margin: 0 auto;          /* centers the video */
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #000;        /* avoids flicker on load */
+}
+
+.hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* ensures perfect fit */
+}
+
+

@@ -1,0 +1,96 @@
+/* ==== NAVBAR CONTAINER ==== */
+.nlc-navbar {
+  width: 100%;
+  background: #0057d9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;            /* Reduce height */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* ==== LEFT SIDE (LOGO + TITLE) ==== */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.nlc-logo {
+  height: 55px;                 /* Smaller logo */
+  margin-right: 12px;
+}
+
+.title-block {
+  line-height: 1.1;
+}
+
+.nlc-title {
+  font-size: 20px;
+  margin: 0;
+  color: white;
+  font-weight: 700;
+}
+
+.nlc-sub {
+  color: #e6e6e6;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* ==== MENU BAR ==== */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 24px;                   /* Equal spacing */
+}
+
+.navbar-menu li {
+  position: relative;
+}
+
+.navbar-menu a,
+.dropbtn {
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 16px;             /* Smaller text */
+}
+
+/* ==== DROPDOWN ==== */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: white;
+  border-radius: 4px;
+  min-width: 180px;
+  padding: 6px 0;
+  top: 28px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 15px;
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background: #f2f2f2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Hover highlight */
+.navbar-menu a:hover,
+.dropbtn:hover {
+  color: #ffeb3b;
+}

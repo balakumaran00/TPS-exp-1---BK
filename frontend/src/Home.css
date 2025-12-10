@@ -1,0 +1,138 @@
+/* Styles for Home page tab section */
+
+.vmv-container {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+}
+
+.vmv-tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.vmv-tab {
+  border: none;
+  background: #e9ecef;
+  color: #333;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.vmv-tab.active {
+  background: #0052ce;
+  color: #fff;
+}
+
+.vmv-panel {
+  display: none;
+  margin: 0;
+  color: #333;
+}
+
+.vmv-panel.active {
+  display: block;
+}
+
+.vmv-panel ul {
+  padding-left: 20px;
+  margin: 0;
+}
+
+.scrolling-message-container {
+  width: 100%;
+  overflow: hidden;
+  background: #0052ce;   /* dark blue bar */
+  padding: 8px 0;
+  margin-top: 20px;
+  border-radius: 4px;
+}
+
+.scrolling-message {
+  display: inline-block;
+  white-space: nowrap;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  padding-left: 100%; /* start off-screen to the right */
+  animation: scroll-left 30s linear infinite; /* SPEED CONTROL */
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+.logo-strip {
+  background: #0052ce;
+  padding: 20px;
+  border-radius: 6px;
+}
+
+.footer-logo {
+  height: 70px;
+  margin: 10px 20px;
+  object-fit: contain;
+}
+
+.logo-row {
+  gap: 20px;
+}
+
+
+.contact-section {
+  background: #0052ce;
+  border-radius: 6px;
+  padding: 20px;
+  color: white;
+}
+
+.contact-divider {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  width: 100px;
+  margin: 10px 0 15px 0;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  font-size: 22px;
+}
+
+.social-link {
+  color: white;
+  transition: 0.3s;
+}
+
+.social-link:hover {
+  color: #00eaff;
+}
+
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-img:hover {
+  transform: scale(1.2);
+}
+
