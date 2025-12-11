@@ -200,39 +200,57 @@ export default function Home() {
 {/* ===== CONTACT & SOCIAL SECTION ===== */}
 <div className="contact-section mt-4 mb-5 p-4">
 
-  <h4 className="fw-bold text-white">NLC India Limited</h4>
+  <div className="row">
+    
+    {/* LEFT SIDE — Address + Social */}
+    <div className="col-md-6">
 
-  <hr className="contact-divider" />
+      <h4 className="fw-bold text-white">NLC India Limited</h4>
 
-  <p className="text-white mb-1">Corporate Office,</p>
-  <p className="text-white mb-1">Block-1, Neyveli Township,</p>
-  <p className="text-white mb-1">Cuddalore District,</p>
-  <p className="text-white mb-3">Tamilnadu - 607801.</p>
+      <hr className="contact-divider" />
 
-  <h6 className="fw-bold text-white">Follow Us</h6>
+      <p className="text-white mb-1">Corporate Office,</p>
+      <p className="text-white mb-1">Block-1, Neyveli Township,</p>
+      <p className="text-white mb-1">Cuddalore District,</p>
+      <p className="text-white mb-3">Tamilnadu - 607801.</p>
 
-  <div className="social-icons">
+      <h6 className="fw-bold text-white">Follow Us</h6>
 
-<a href="https://www.facebook.com" target="_blank" rel="noopener" title="Facebook">
-  <img src="/images/social/facebook.png" alt="Facebook Icon" className="social-img" />
-</a>
+      <div className="social-icons">
+        <a href="https://www.facebook.com" target="_blank" rel="noopener">
+          <img src="/images/social/facebook.png" className="social-img" />
+        </a>
+        <a href="https://www.x.com" target="_blank" rel="noopener">
+          <img src="/images/social/x.png" className="social-img" />
+        </a>
+         <a href="https://www.youtube.com/c/NLCINDIALIMITED" target="_blank" rel="noopener">
+          <img src="/images/social/youtube.png" className="social-img" />
+        </a>
+        <a href="https://www.instagram.com/_.braxton__/" target="_blank" rel="noopener">
+          <img src="/images/social/instagram.png" className="social-img" />
+        </a>
 
-<a href="https://www.x.com" target="_blank" rel="noopener" title="X (Twitter)">
-  <img src="/images/social/x.png" alt="X Icon" className="social-img" />
-</a>
+      </div>
 
-<a href="https://www.instagram.com" target="_blank" rel="noopener" title="Instagram">
-  <img src="/images/social/instagram.png" alt="Instagram Icon" className="social-img" />
-</a>
+    </div>
+
+    {/* RIGHT SIDE — HYPERLINKS */}
+    <div className="col-md-6 text-white right-links">
+
+      <h5 className="fw-bold mb-3">Quick Links</h5>
+
+      <ul className="list-unstyled">
+        <li><a href="https://www.nlcindia.in" className="right-link">NLCIL Official Website</a></li>
+        <li><a href="https://www.coal.nic.in" className="right-link">Ministry of Coal</a></li>
+        <li><a href="https://www.india.gov.in" className="right-link">National Portal of India</a></li>
+        <li><a href="https://www.makeinindia.com" className="right-link">Make in India</a></li>
+      </ul>
+
+    </div>
+
+  </div>
 
 
-
-
-<a href="https://www.youtube.com/c/NLCINDIALIMITED" target="_blank" rel="noopener" title="YouTube">
-  <img src="/images/social/youtube.png" alt="YouTube Icon" className="social-img" />
-</a>
-
-</div>
 
 
 

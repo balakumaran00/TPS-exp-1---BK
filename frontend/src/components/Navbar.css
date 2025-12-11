@@ -1,96 +1,139 @@
-/* ==== NAVBAR CONTAINER ==== */
+/* ============================
+   Compact / formal navbar CSS
+   ============================ */
+
+/* NAVBAR WRAPPER */
 .nlc-navbar {
   width: 100%;
-  background: #0057d9;
+  background: #0b63d6;                 /* corporate blue */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 20px;            /* Reduce height */
-  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  padding: 6px 14px;                   /* compact padding */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12);
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-/* ==== LEFT SIDE (LOGO + TITLE) ==== */
+/* LEFT: logo + title */
 .navbar-left {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
+/* make logo smaller so header is compact */
 .nlc-logo {
-  height: 55px;                 /* Smaller logo */
-  margin-right: 12px;
+  height: 42px;            /* smaller */
+  width: auto;
+  display: block;
 }
 
+/* title block (avoid wrapping) */
 .title-block {
-  line-height: 1.1;
+  line-height: 1;
+  white-space: nowrap;     /* prevent line breaks */
 }
 
+/* compact title & subtitle */
 .nlc-title {
-  font-size: 20px;
+  font-size: 15px;         /* compact */
   margin: 0;
-  color: white;
+  color: #fff;
   font-weight: 700;
+  letter-spacing: 0.2px;
 }
 
 .nlc-sub {
-  color: #e6e6e6;
-  font-size: 13px;
+  font-size: 11px;
   margin: 0;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+  opacity: 0.95;
 }
 
-/* ==== MENU BAR ==== */
+/* RIGHT: menu row */
 .navbar-menu {
   display: flex;
-  list-style: none;
+  align-items: center;
+  gap: 16px;               /* tighter spacing */
   margin: 0;
   padding: 0;
-  gap: 24px;                   /* Equal spacing */
+  list-style: none;
 }
 
+/* menu items */
 .navbar-menu li {
   position: relative;
 }
 
 .navbar-menu a,
-.dropbtn {
-  color: white;
-  font-weight: 600;
+.dropbtn,
+.navbar-menu span {
+  color: #ffffff;
   text-decoration: none;
-  cursor: pointer;
-  font-size: 16px;             /* Smaller text */
+  font-size: 14px;         /* smaller text */
+  font-weight: 600;
+  padding: 6px 8px;
+  display: inline-block;
+  line-height: 1;
 }
 
-/* ==== DROPDOWN ==== */
+/* subtle hover style for top-level menu items */
+.navbar-menu a:hover,
+.dropbtn:hover {
+  color: #e8f4ff;
+  background: rgba(255,255,255,0.03);
+  border-radius: 4px;
+}
+
+/* ===================== */
+/* DROPDOWN — FIXED OPEN */
+/* ===================== */
+
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  cursor: pointer;
+  padding: 10px 14px;
+  color: white;
+  font-weight: 600;
+}
+
 .dropdown-content {
   display: none;
   position: absolute;
   background: white;
-  border-radius: 4px;
-  min-width: 180px;
-  padding: 6px 0;
-  top: 28px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  min-width: 220px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  z-index: 9999;
 }
 
-.dropdown-content a {
-  display: block;
-  padding: 8px 15px;
-  font-size: 14px;
-  color: #333;
-}
-
-.dropdown-content a:hover {
-  background: #f2f2f2;
-}
-
+/* KEEP DROPDOWN OPEN WHEN HOVERED */
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
-/* Hover highlight */
-.navbar-menu a:hover,
-.dropbtn:hover {
-  color: #ffeb3b;
+/* FIX MENU DISAPPEARING WHEN MOVING MOUSE */
+.dropdown-content:hover {
+  display: block;
+}
+
+/* MENU ITEMS BLUE HOVER */
+.dropdown-content a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+}
+
+.dropdown-content a:hover {
+  background: #0057d9; /* BLUE */
+  color: white;
 }

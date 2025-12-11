@@ -90,49 +90,55 @@
 }
 
 
+/* CONTACT BOX */
 .contact-section {
-  background: #0052ce;
-  border-radius: 6px;
+  background: #0057d9;
+  border-radius: 10px;
   padding: 20px;
   color: white;
 }
 
+/* Divider line */
 .contact-divider {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   width: 100px;
   margin: 10px 0 15px 0;
 }
 
+/* Social icon container */
 .social-icons {
   display: flex;
-  gap: 15px;
-  font-size: 22px;
+  gap: 18px;
+  align-items: center;
+  margin-top: 12px;
 }
 
-.social-link {
-  color: white;
-  transition: 0.3s;
-}
-
-.social-link:hover {
-  color: #00eaff;
-}
-
-
-.social-icons {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-}
-
+/* FIXED CLEAN ICON SIZE */
 .social-img {
-  width: 28px;
-  height: 28px;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;     /* Prevents stretching */
+  border-radius: 6px;      /* Optional clean edges */
+  background: white;       /* Makes icons clean */
+  padding: 4px;            /* Balanced padding */
   cursor: pointer;
   transition: transform 0.2s ease;
 }
 
 .social-img:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
 }
 
+/* Right-side hyperlinks */
+.right-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.right-links a:hover {
+  text-decoration: underline;
+  color: #cce4ff;
+}

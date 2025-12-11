@@ -114,7 +114,7 @@ export default function Navbar() {
 
         <div className="title-block">
           <h1 className="nlc-title">NLC India Limited</h1>
-          <p className="nlc-sub">('Navratna' – Government of India Enterprise)</p>
+          <p className="nlc-sub">(Navratna – Government of India Enterprise)</p>
         </div>
       </div>
 
