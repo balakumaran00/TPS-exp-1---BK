@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/tps-exp-1-NLC-BK/',   // 👈 VERY IMPORTANT (repo name)
+  base: '/TPS-exp-1---BK/',   // 👈 VERY IMPORTANT (repo name)
 })
